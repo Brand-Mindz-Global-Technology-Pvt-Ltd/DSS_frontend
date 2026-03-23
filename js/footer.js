@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <!-- Column 1: About & Socials (Wide) -->
                     <div class="space-y-6">
                         <p class="text-sm sm:text-[15px] leading-relaxed font-medium">
-                            Book Trusted Local Services, Order From Nearby Stores, And Get Everything Delivered To Your Doorstep All In One Powerful Hyperlocal App. Book Trusted Local Services, Order From Nearby Stores, And Get Everything Delivered To Your Doorstep All In One Powerful Hyperlocal App.
+                            Tenkasi DSS Delivery Service is built with a simple mission — to make local delivery faster, easier, and more reliable for everyone. We understand the everyday challenges people and businesses face when it comes to transporting goods, whether it’s groceries for a home, parcels for a customer, or stock movement for a shop. 
                         </p>
                         <!-- Social Icons (Square/Green filled style) -->
                         <div class="flex items-center space-x-4">

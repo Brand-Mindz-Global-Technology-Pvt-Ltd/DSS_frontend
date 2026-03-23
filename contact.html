@@ -58,12 +58,21 @@
                 Get In <span class="text-brand-green">Touch With Us</span>
             </h1>
 
-            <!-- 3. Reach Out Button (Quicksand Font - Reduced Size) -->
+            <!-- 3. Reach Out Button (Wait-for-Action Style) -->
             <button
-                class="bg-brand-green text-white px-6 sm:px-8 py-3 sm:py-3 rounded-full inline-flex items-center space-x-3 sm:space-x-4 hover:bg-green-700 transition-all transform hover:-translate-y-1 shadow-[0_15px_30px_rgba(0,148,68,0.25)] group font-quicksand">
-                <span class="font-fashion text-lg sm:text-lg font-bold">Reach Out</span>
-                <div class="flex items-center justify-center">
-                    <img src="images/scooter-icon.png" alt="Scooter" class="w-8 h-auto sm:w-10 group-hover:translate-x-1 transition-transform">
+                id="reach-out-btn"
+                class="bg-brand-green text-white px-5 sm:px-6 py-3 sm:py-3 rounded-full inline-flex items-center justify-center group font-quicksand overflow-hidden relative max-w-[70px] transition-all duration-[2000ms] ease-in-out whitespace-nowrap shadow-[0_15px_30px_rgba(0,148,68,0.25)] hover:bg-green-700 hover:-translate-y-1">
+                
+                <!-- Text (Initial: Hidden & No Width) -->
+                <span id="reach-out-text" 
+                    class="font-fashion text-lg sm:text-lg font-bold opacity-0 max-w-0 overflow-hidden transition-all duration-[4000ms] ease-in-out">
+                    Reach Out
+                </span>
+
+                <!-- Icon Container (Initial: Centered & Fading In) -->
+                <div id="reach-out-icon-container" 
+                    class="flex items-center justify-center opacity-0 -translate-x-6 transition-all duration-[2000ms] ease-in-out">
+                    <img src="assets/icons/delivery.svg" alt="Scooter" class="w-8 h-auto sm:w-10 group-hover:translate-x-1 transition-transform">
                 </div>
             </button>
         </div>
@@ -97,9 +106,7 @@
                         <!-- Address -->
                         <div class="flex items-start space-x-4">
                             <div class="text-brand-green mt-1 font-bold">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                                </svg>
+                                <img src="assets/icons/property-location.svg" alt="" class="w-6 h-6">
                             </div>
                             <div class="text-lg font-bold text-gray-800 leading-snug">
                                 4074 Ebert Summit Suite 375<br>
@@ -110,9 +117,7 @@
                         <!-- Phone -->
                         <div class="flex items-center space-x-4">
                             <div class="text-brand-green font-bold">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                                </svg>
+                                <img src="assets/icons/mobile-chat.svg" alt="" class="w-6 h-6">
                             </div>
                             <a href="tel:+918756978235" class="text-lg font-bold text-gray-800 hover:text-brand-green transition-colors">+91 87569 78235</a>
                         </div>
@@ -172,6 +177,7 @@
     <div id="footer-placeholder"></div>
 
     <!-- Scripts -->
+    <script src="js/cp-1.js"></script>
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
 </body>

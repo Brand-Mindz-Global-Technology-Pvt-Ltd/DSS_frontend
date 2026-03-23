@@ -126,13 +126,15 @@
                     <div class="relative w-[140px] md:w-[170px] lg:w-[200px]">
                         <!-- Highlighted Pill (Behind Mockup) -->
                         <div
-                            class="absolute top-[-8%] left-1/2 -translate-x-1/2 z-0 flex items-center gap-3 bg-brand-green text-white px-6 md:px-10 py-2.5 md:py-3 rounded-full shadow-2xl hover:scale-105 transition-all duration-300 w-max">
+                            id="hp-pill-btn"
+                            class="absolute top-[-8%] left-1/2 -translate-x-1/2 z-0 flex items-center justify-center bg-brand-green text-white px-6 md:px-8 py-2.5 md:py-3 rounded-full shadow-2xl transition-all duration-[500ms] ease-in-out w-max max-w-[70px] overflow-hidden whitespace-nowrap group">
                             <span
-                                class="text-xl md:text-2xl lg:text-[1.75rem] font-fashion font-medium whitespace-nowrap leading-none">Delivered
-                                Fast</span>
-                            <div class="hidden md:flex items-center">
+                                id="hp-pill-text"
+                                class="text-xl md:text-2xl lg:text-[1.75rem] font-fashion font-medium whitespace-nowrap leading-none opacity-0 max-w-0 overflow-hidden transition-all duration-[2000ms] ease-in-out">
+                                Delivered Fast</span>
+                            <div id="hp-pill-icon" class="flex items-center justify-center opacity-100 transition-all duration-[500ms]">
                                 <img src="assets/icons/delivery.svg" alt="Scooter"
-                                    class="w-8 h-auto filter brightness-0 invert">
+                                    class="w-6 md:w-8 h-auto filter brightness-0 invert">
                             </div>
                         </div>
 
@@ -392,9 +394,10 @@
                 What <span class="bg-brand-green text-white px-6 py-1.5 rounded-full inline-block ml-1 shadow-md">We
                     Do</span>
             </h2>
-            <p class="text-gray-500 text-sm md:text-md max-w-2xl mx-auto font-medium">
-                Book Trusted Local Services, Order From Nearby Stores, And Get <br class="hidden md:block" />
-                Everything Delivered To Your Doorstep All In One Powerful Hyperlocal App
+            <p class="text-black-500 text-sm md:text-lg max-w-2xl mx-auto font-medium">
+                We handle food, grocery, parcel, and wholesale delivery with care and speed.<br class="hidden md:block" />
+                From urgent shipments to scheduled services, we cover all local needs.<br class="hidden md:block" />
+                Trusted delivery partner for homes, shops, and businesses.
             </p>
         </div>
 
@@ -402,8 +405,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                 <!-- Card 1 -->
                 <div class="group relative overflow-hidden rounded-xl transition-all duration-500 hover:shadow-xl">
-                    <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&q=80&w=800"
-                        alt="Restaurant Pickup"
+                    <img src="./images/delivery.webp" alt="Restaurant Pickup"
                         class="w-full h-64 md:h-72 lg:h-80 object-cover group-hover:scale-105 transition-transform duration-700">
                     <!-- Icon Badge (Exact Design: Small & Top Left) -->
                     <div
@@ -430,16 +432,15 @@
 
                 <!-- Card 2 -->
                 <div class="group relative overflow-hidden rounded-xl transition-all duration-500 hover:shadow-xl">
-                    <img src="https://images.unsplash.com/photo-1558227691-41ea78d1f631?auto=format&fit=crop&q=80&w=800"
-                        alt="Fast Road Delivery"
+                    <img src="./images/bike.webp" alt="Fast Road Delivery"
                         class="w-full h-64 md:h-72 lg:h-80 object-cover group-hover:scale-105 transition-transform duration-700">
                     <!-- Icon Badge -->
                     <div
                         class="absolute top-4 left-4 w-9 h-9 bg-brand-green rounded-lg flex items-center justify-center shadow-lg z-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
+                        <img src="./assets/icons/Bike.svg" alt="Bike" class="h-4 w-4 text-white" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                         </svg>
                     </div>
                     <!-- Text Overlay -->
@@ -458,16 +459,15 @@
 
                 <!-- Card 3 -->
                 <div class="group relative overflow-hidden rounded-xl transition-all duration-500 hover:shadow-xl">
-                    <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaad5b?auto=format&fit=crop&q=80&w=800"
-                        alt="Delivered With Smile"
+                    <img src="./images/customer.webp" alt="Delivered With Smile"
                         class="w-full h-64 md:h-72 lg:h-80 object-cover group-hover:scale-105 transition-transform duration-700">
                     <!-- Icon Badge -->
                     <div
                         class="absolute top-4 left-4 w-9 h-9 bg-brand-green rounded-lg flex items-center justify-center shadow-lg z-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        <img src="./assets/icons/delivery-received.svg" alt="delivery-received"
+                            class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
                     <!-- Text Overlay -->
@@ -520,7 +520,7 @@
                     <div class="tab-item group cursor-pointer" data-tab="vision">
                         <h3
                             class="text-3xl font-fashion font-medium text-gray-400 group-[.active]:text-brand-green transition-all duration-300 pb-8">
-                            Vission
+                            Vision
                         </h3>
                         <div
                             class="h-[1px] w-56 bg-gray-100 group-[.active]:bg-brand-green/30 transition-all duration-500 rounded-full relative">
@@ -547,13 +547,11 @@
                 <div
                     class="relative group rounded-3xl overflow-hidden shadow-xl aspect-video md:h-[350px] lg:h-[400px] bg-white w-full">
                     <div id="app-image-container" class="w-full h-full relative">
-                        <img src="images/delivery_boy_hero.png" alt="Delivery"
+                        <img src="images/dss-delivery.webp" alt="Delivery"
                             class="app-slide active absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-100 z-10 brightness-95">
-                        <img src="https://images.unsplash.com/photo-1558227691-41ea78d1f631?auto=format&fit=crop&q=80&w=800"
-                            alt="Fast Delivery"
+                        <img src="images/dss-delivery.webp" alt="Fast Delivery"
                             class="app-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 z-0">
-                        <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&q=80&w=800"
-                            alt="Services"
+                        <img src="images/dss-delivery.webp" alt="Services"
                             class="app-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 z-0">
                     </div>
 
@@ -578,38 +576,30 @@
                         <div id="content-about"
                             class="tab-content active transition-all duration-500 translate-x-0 opacity-100">
                             <p class="text-gray-600 text-sm md:text-lg leading-relaxed font-normal">
-                                Book Trusted Local Services, Order From Nearby Stores, And Get Everything Delivered To
-                                Your Doorstep All In One Powerful Hyperlocal App. Book Trusted Local Services, Order
-                                From Nearby Stores, And Get Everything Delivered To Your Doorstep All In One Powerful
-                                Hyperlocal App.
+                                Everything you need, all in one place — from groceries and food delivery to parcels, wholesale transport, and doorstep pickup services. DSS Delivery Service brings together all your daily and business delivery needs into a single, reliable platform designed for speed, safety, and convenience.
                             </p>
                             <p class="text-gray-600 text-sm md:text-lg leading-relaxed font-normal mt-6">
-                                Book Trusted Local Services, Order From Nearby Stores, And Get Everything Delivered To
-                                Your Doorstep All In One Powerful Hyperlocal App.
+                                No more delays, no more confusion, and no need to depend on multiple service providers. Whether it’s an urgent same-day delivery, a scheduled service, or regular transport between Tenkasi and nearby areas, we ensure smooth and timely execution every time.
                             </p>
                         </div>
                         <div id="content-vision"
                             class="tab-content absolute top-0 left-0 w-full transition-all duration-500 translate-x-12 opacity-0 hidden">
                             <p class="text-gray-600 text-sm md:text-lg leading-relaxed font-normal">
-                                Our Vision is to revolutionize the local economy by bridging the gap between small
-                                businesses and digital customers. We aim to become the pulse of Tenkasi, powering every
-                                local transaction with trust and speed.
+                                To revolutionize the local delivery landscape by becoming the most trusted one-stop platform, empowering the Tenkasi community through seamless connectivity and a relentless commitment to service excellence.
                             </p>
                         </div>
                         <div id="content-mission"
                             class="tab-content absolute top-0 left-0 w-full transition-all duration-500 translate-x-12 opacity-0 hidden">
                             <p class="text-gray-600 text-sm md:text-lg leading-relaxed font-normal">
-                                Our Mission is to provide a seamless hyperlocal delivery experience, empowering local
-                                entrepreneurs and providing residents with unparalleled convenience, quality, and
-                                community support in one powerful app.
+                                Our mission is to empower the Tenkasi community by providing a unified, high-speed delivery ecosystem for all life and business needs—from daily groceries to wholesale transport—ensuring absolute safety and reliability in every mile.
                             </p>
                         </div>
                     </div>
                     <div class="text-right lg:text-left">
-                        <button
-                            class="bg-brand-green text-white px-10 py-3 rounded-lg text-lg font-medium hover:bg-green-700 transition-all shadow-lg font-fashion">
+                        <a href="/about"
+                            class="inline-block bg-brand-green text-white px-10 py-3 rounded-lg text-lg font-medium hover:bg-green-700 transition-all shadow-lg font-fashion text-center">
                             Know More
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -682,9 +672,7 @@
                 WHAT YOU CAN FIND
             </h2>
             <p class="text-gray-600 text-sm md:text-lg max-w-4xl mx-auto font-medium leading-relaxed">
-                Book Trusted Local Services, Order From Nearby Stores, And Get Everything Delivered To Your Doorstep All
-                In One Powerful Hyperlocal App. Book Trusted Local Services, Order From Nearby Stores, And Get
-                Everything Delivered To Your Doorstep All In One Powerful Hyperlocal App.
+                Food, grocery, and essentials delivery services. Parcel pickup, porter support, and wholesale distribution. Same-day delivery and transport from Tenkasi to Tirunelveli.
             </p>
         </div>
 
