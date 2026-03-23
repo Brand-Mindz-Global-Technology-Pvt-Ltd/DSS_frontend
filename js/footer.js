@@ -39,9 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="space-y-4">
                         <div class="flex items-start space-x-3">
                             <div class="text-[#009444] shrink-0 mt-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
+                                <img src="assets/icons/address.svg" class="w-5 h-5" alt="Location Icon" loading="lazy" />
                             </div>
                             <p class="text-[13px] font-bold leading-tight">
                                 Mini Hall, Commercial Complex 2nd Floor, TVS Emerald Green Hills, Perungalathur-600063
@@ -49,15 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="flex items-center space-x-3">
                             <div class="text-[#009444] shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
+                                <img src="assets/icons/phone.svg" class="w-5 h-5" alt="Phone Icon" loading="lazy" />
                             </div>
                             <p class="text-[14px] font-bold">+91-98844 56686</p>
                         </div>
                         <div class="flex items-center space-x-3">
                             <div class="text-[#009444] shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z"/></svg>
+                                <img src="assets/icons/mail.svg" class="w-5 h-5" alt="Mail Icon" loading="lazy" />
                             </div>
                             <p class="text-[14px] font-bold uppercase">DSS@gmail.com</p>
                         </div>
