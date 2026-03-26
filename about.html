@@ -44,6 +44,9 @@
             <img src="images/About-banner.webp" alt="Delivery Hero" class="w-full h-full object-cover">
         </div>
 
+        <!-- Top Shadow Overlay (As per Design) -->
+        <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/40 via-black/10 to-transparent z-10 pointer-events-none"></div>
+
         <!-- Right Side White Shadow/Gradient Overlay -->
         <div
             class="absolute inset-y-0 right-0 w-full md:w-[60%] bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none">
@@ -54,22 +57,28 @@
             <div class="w-full md:w-[600px] lg:w-[700px] text-left">
 
                 <!-- Main Heading (Semibold Fashion Font) -->
-                <div class="mb-12">
+                <div class="mb-6 md:mb-12">
                     <h1
-                        class="font-fashion font-semibold text-3xl md:text-5xl lg:text-[4rem] font-medium text-gray-900 leading-[1.3] tracking-wide flex flex-col gap-4">
+                        class="font-fashion font-semibold text-4xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 tracking-tight flex flex-col gap-3 md:gap-5 leading-tight">
                         <span>Everything You</span>
-                        <span>Need In <span class="text-brand-green">Tenkasi !</span></span>
+                        <span>
+                            Need In <br class="sm:hidden">
+                            <span class="text-brand-green">Tenkasi !</span>
+                        </span>
                     </h1>
                 </div>
 
                 <!-- Delivered Fast Button (Design Match) -->
                 <div class="flex items-start">
-                    <button
-                        id="ap-hero-btn"
+                    <button id="ap-hero-btn"
                         class="bg-[#009444] text-white px-6 py-3 rounded-full flex items-center justify-center transition-all duration-[500ms] shadow-2xl group max-w-[70px] overflow-hidden whitespace-nowrap">
-                        <span id="ap-hero-text" class="font-fashion text-2xl lg:text-3xl font-normal leading-none opacity-0 max-w-0 overflow-hidden transition-all duration-[2000ms]">Delivered Fast</span>
-                        <div id="ap-hero-icon" class="flex items-center justify-center opacity-100 transition-all duration-[500ms]">
-                            <img src="assets/icons/delivery.svg" alt="Fast Delivery Arrow" class="w-10 h-10 md:w-14 md:h-14">
+                        <span id="ap-hero-text"
+                            class="font-fashion text-2xl lg:text-3xl font-normal leading-none opacity-0 max-w-0 overflow-hidden transition-all duration-[2000ms]">Delivered
+                            Fast</span>
+                        <div id="ap-hero-icon"
+                            class="flex items-center justify-center opacity-100 transition-all duration-[500ms]">
+                            <img src="assets/icons/delivery.svg" alt="Fast Delivery Arrow"
+                                class="w-10 h-10 md:w-14 md:h-14">
                         </div>
                     </button>
                 </div>
@@ -80,90 +89,88 @@
 
 
     <!-- One App Section (Refined Design) -->
-    <section class="py-24 bg-white overflow-hidden font-manjari">
+    <section class="py-16 md:py-24 bg-white overflow-hidden font-manjari">
         <div class="container mx-auto px-6 max-w-[1400px]">
 
-            <!-- Section Header (Exact Match) -->
-            <div class="text-center mb-20">
+            <!-- Section Header (Fully Responsive) -->
+            <div class="text-center mb-12 md:mb-20">
                 <h2
-                    class="font-fashion text-4xl md:text-5xl text-gray-900 inline-flex items-center flex-wrap justify-center gap-4">
+                    class="font-fashion text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 flex flex-col sm:flex-row items-center justify-center gap-4">
                     One App.
-                    <span class="bg-brand-green text-white px-10 py-2.5 rounded-full text-3xl md:text-4xl">All Local
+                    <span class="bg-brand-green text-white px-6 sm:px-10 py-2 sm:py-2.5 rounded-full text-xl sm:text-3xl lg:text-4xl shadow-lg">All Local
                         Needs !</span>
                 </h2>
             </div>
 
-            <!-- Content Grid (Optimized Proportions) -->
-            <div class="grid grid-cols-1 lg:grid-cols-[280px_1fr_450px] gap-12 xl:gap-24 items-start">
+            <!-- Content Grid (Responsive Layout) -->
+            <div class="grid grid-cols-1 lg:grid-cols-[280px_1fr_450px] gap-8 md:gap-12 xl:gap-24 items-start">
 
-                <!-- Left Column: Sidebar Tabs with Mark Icon -->
-                <div class="flex flex-col space-y-8 lg:pr-4">
+                <!-- Left Column: Sidebar Tabs with Fixed Positioning for Mobile -->
+                <div class="flex flex-col space-y-4 md:space-y-8 lg:pr-4">
                     <!-- About Us (Active) -->
-                    <div class="border-b border-gray-100 pb-12">
+                    <div class="border-b border-gray-100 pb-4 md:pb-12">
                         <div class="relative flex items-center cursor-pointer group active" data-tab="about">
-                            <!-- Mark Icon (Left Side) -->
+                            <!-- Mark Icon (Responsive Side) -->
                             <div
-                                class="absolute -left-10 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center opacity-0 group-[.active]:opacity-100 transition-opacity duration-300">
-                                <img src="assets/icons/mark.svg" alt="Mark" class="w-10 h-auto drop-shadow-sm">
+                                class="absolute -left-6 sm:-left-10 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center opacity-0 group-[.active]:opacity-100 transition-opacity duration-300 pointer-events-none">
+                                <img src="assets/icons/mark.svg" alt="Mark" class="w-full h-auto drop-shadow-sm">
                             </div>
                             <!-- Active Box / Label -->
                             <div
-                                class="tab-box w-full bg-brand-green text-white px-10 py-7 rounded-[25px] shadow-xl flex items-center transition-all duration-300">
-                                <span class="font-fashion text-3xl md:text-3xl">About Us</span>
+                                class="tab-box w-full bg-brand-green text-white px-6 sm:px-10 py-5 sm:py-7 rounded-[20px] sm:rounded-[25px] shadow-xl flex items-center transition-all duration-300">
+                                <span class="font-fashion text-2xl sm:text-3xl">About Us</span>
                             </div>
-                            <!-- Inactive Label (fallback) -->
+                            <!-- Inactive Label -->
                             <div class="tab-label hidden w-full">
                                 <span
-                                    class="font-fashion text-3xl md:text-3xl text-gray-300 group-hover:text-gray-400">About
+                                    class="font-fashion text-2xl sm:text-3xl text-gray-300 group-hover:text-gray-400">About
                                     Us</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Vision (Inactive) -->
-                    <div class="border-b border-gray-100 pb-12">
+                    <div class="border-b border-gray-100 pb-4 md:pb-12">
                         <div class="relative flex items-center cursor-pointer group" data-tab="vision">
-                            <!-- Mark Icon (Hidden when inactive) -->
                             <div
-                                class="absolute -left-10 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center opacity-0 group-[.active]:opacity-100 transition-opacity duration-300">
-                                <img src="assets/icons/mark.svg" alt="Mark" class="w-10 h-auto drop-shadow-sm">
+                                class="absolute -left-6 sm:-left-10 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center opacity-0 group-[.active]:opacity-100 transition-opacity duration-300 pointer-events-none">
+                                <img src="assets/icons/mark.svg" alt="Mark" class="w-full h-auto drop-shadow-sm">
                             </div>
                             <div
-                                class="tab-box hidden w-full bg-brand-green text-white px-10 py-7 rounded-[25px] shadow-xl items-center">
-                                <span class="font-fashion text-3xl md:text-3xl">Vision</span>
+                                class="tab-box hidden w-full bg-brand-green text-white px-6 sm:px-10 py-5 sm:py-7 rounded-[20px] sm:rounded-[25px] shadow-xl items-center">
+                                <span class="font-fashion text-2xl sm:text-3xl">Vision</span>
                             </div>
-                            <div class="tab-label w-full">
+                            <div class="tab-label w-full px-6 sm:px-0">
                                 <span
-                                    class="font-fashion text-3xl md:text-3xl text-gray-300 group-hover:text-gray-400 transition-colors">Vision</span>
+                                    class="font-fashion text-2xl sm:text-3xl text-gray-300 group-hover:text-gray-400 transition-colors">Vision</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Mission (Inactive) -->
-                    <div class="border-b border-gray-100 pb-12">
+                    <div class="border-b border-gray-100 pb-4 md:pb-12">
                         <div class="relative flex items-center cursor-pointer group" data-tab="mission">
-                            <!-- Mark Icon (Hidden when inactive) -->
                             <div
-                                class="absolute -left-10 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center opacity-0 group-[.active]:opacity-100 transition-opacity duration-300">
-                                <img src="assets/icons/mark.svg" alt="Mark" class="w-10 h-auto drop-shadow-sm">
+                                class="absolute -left-6 sm:-left-10 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center opacity-0 group-[.active]:opacity-100 transition-opacity duration-300 pointer-events-none">
+                                <img src="assets/icons/mark.svg" alt="Mark" class="w-full h-auto drop-shadow-sm">
                             </div>
                             <div
-                                class="tab-box hidden w-full bg-brand-green text-white px-10 py-7 rounded-[25px] shadow-xl items-center">
-                                <span class="font-fashion text-3xl md:text-3xl">Mission</span>
+                                class="tab-box hidden w-full bg-brand-green text-white px-6 sm:px-10 py-5 sm:py-7 rounded-[20px] sm:rounded-[25px] shadow-xl items-center">
+                                <span class="font-fashion text-2xl sm:text-3xl">Mission</span>
                             </div>
-                            <div class="tab-label w-full">
+                            <div class="tab-label w-full px-6 sm:px-0">
                                 <span
-                                    class="font-fashion text-3xl md:text-3xl text-gray-300 group-hover:text-gray-400 transition-colors">Mission</span>
+                                    class="font-fashion text-2xl sm:text-3xl text-gray-300 group-hover:text-gray-400 transition-colors">Mission</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Middle Column: Wider Dynamic Content -->
-                <div class="flex flex-col justify-between h-full space-y-6">
+                <!-- Middle Column: Dynamic Content -->
+                <div class="flex flex-col justify-between h-full space-y-8">
                     <div id="about-tab-content-container" class="relative">
                         <div id="tab-content-text" class="opacity-100 transition-opacity duration-500">
-                            <p class="text-gray-600 text-[18px] leading-[1.8] font-normal">
+                            <p class="text-gray-600 text-sm md:text-[18px] leading-relaxed md:leading-[1.8] font-normal text-justify sm:text-left">
                                 Tenkasi DSS Delivery Service is built with a simple mission — to make local delivery
                                 faster, easier, and more reliable for everyone. We understand the everyday challenges
                                 people and businesses face when transporting goods, from groceries and parcels to shop
@@ -178,21 +185,23 @@
                     </div>
 
                     <!-- Action Button -->
-                    <div class="pt-0">
-                        <button
-                            class="bg-[#009444] text-white px-10 py-4 rounded-lg text-2xl font-fashion hover:bg-green-700 transition-all shadow-md active:scale-95">
-                            Reach Out
-                        </button>
+                    <div class="text-center sm:text-left">
+                        <a href="contact.html">
+                            <button
+                                class="bg-[#009444] text-white px-8 md:px-10 py-3 md:py-4 rounded-lg text-xl md:text-2xl font-fashion hover:bg-green-700 transition-all shadow-md active:scale-95">
+                                Reach Out
+                            </button>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Right Column: Stacked Images (Swapable via ID) -->
-                <div class="flex flex-col space-y-8">
-                    <div class="rounded-xl overflow-hidden shadow-xl aspect-video h-[280px] bg-gray-50">
+                <!-- Right Column: Stacked Images -->
+                <div class="flex flex-col md:flex-row lg:flex-col gap-6 md:gap-8 lg:space-y-8 lg:gap-0">
+                    <div class="rounded-xl overflow-hidden shadow-xl aspect-video h-[200px] sm:h-[280px] bg-gray-50 flex-1">
                         <img id="primary-tab-img" src="images/about_delivery_scene.png" alt="Featured Image"
                             class="w-full h-full object-cover transition-opacity duration-500">
                     </div>
-                    <div class="rounded-xl overflow-hidden shadow-xl aspect-video h-[280px] bg-gray-50">
+                    <div class="rounded-xl overflow-hidden shadow-xl aspect-video h-[200px] sm:h-[280px] bg-gray-50 flex-1">
                         <img id="secondary-tab-img"
                             src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&q=80&w=600"
                             alt="Support Image" class="w-full h-full object-cover transition-opacity duration-500">

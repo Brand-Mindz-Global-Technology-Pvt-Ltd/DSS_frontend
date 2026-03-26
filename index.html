@@ -68,21 +68,22 @@
     <div id="header-placeholder" class="fixed top-0 left-0 w-full z-[100]"></div>
 
     <!-- Hero Banner (Refined Design) -->
-    <section class="relative h-auto flex items-center pt-48 pb-20 bg-white overflow-hidden font-manjari">
+    <section class="relative h-auto flex items-center pt-32 md:pt-48 pb-20 bg-white overflow-hidden font-manjari">
         <!-- Background Layer -->
         <div class="absolute inset-0 z-0 select-none">
             <img src="images/Banner.webp" alt="Waterfall Background" class="w-full h-full object-cover">
+            <!-- Top Shadow Gradient (As per Design) -->
+            <div class="absolute inset-x-0 top-0 h-80 bg-gradient-to-b from-white/80 via-White/40 to-transparent z-[11] pointer-events-none"></div>
             <!-- Smooth White Fades -->
-            <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white to-transparent"></div>
             <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white to-transparent"></div>
-            <div class="absolute inset-0 bg-black/20"></div>
+            <div class="absolute inset-0 bg-black/10"></div>
         </div>
 
         <div class="container mx-auto px-6 relative z-10">
             <!-- Top Heading Section (Centered) -->
-            <div class="text-center mb-16 md:mb-20">
+            <div class="text-center mb-10 md:mb-20">
                 <h1
-                    class="font-fashion text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-semibold text-white leading-[1.15] mt-4">
+                    class="font-fashion text-3xl sm:text-5xl md:text-5xl lg:text-6xl font-semibold text-black leading-[1.15] mt-4">
                     Everything You Need In <span class="text-brand-green">Tenkasi</span>
                 </h1>
             </div>
@@ -125,14 +126,13 @@
                 <div class="flex justify-center relative translate-y-4 lg:translate-y-8 shrink-0">
                     <div class="relative w-[140px] md:w-[170px] lg:w-[200px]">
                         <!-- Highlighted Pill (Behind Mockup) -->
-                        <div
-                            id="hp-pill-btn"
+                        <div id="hp-pill-btn"
                             class="absolute top-[-8%] left-1/2 -translate-x-1/2 z-0 flex items-center justify-center bg-brand-green text-white px-6 md:px-8 py-2.5 md:py-3 rounded-full shadow-2xl transition-all duration-[500ms] ease-in-out w-max max-w-[70px] overflow-hidden whitespace-nowrap group">
-                            <span
-                                id="hp-pill-text"
-                                class="text-xl md:text-2xl lg:text-[1.75rem] font-fashion font-medium whitespace-nowrap leading-none opacity-0 max-w-0 overflow-hidden transition-all duration-[2000ms] ease-in-out">
+                            <span id="hp-pill-text"
+                                class="text-xl md:text-2xl lg:text-[2rem] font-fashion font-medium whitespace-nowrap leading-none opacity-0 max-w-0 overflow-hidden transition-all duration-[2000ms] ease-in-out">
                                 Delivered Fast</span>
-                            <div id="hp-pill-icon" class="flex items-center justify-center opacity-100 transition-all duration-[500ms]">
+                            <div id="hp-pill-icon"
+                                class="flex items-center justify-center opacity-100 transition-all duration-[500ms]">
                                 <img src="assets/icons/delivery.svg" alt="Scooter"
                                     class="w-6 md:w-8 h-auto filter brightness-0 invert">
                             </div>
@@ -157,7 +157,7 @@
                 <div class="space-y-6">
                     <!-- Feature Box (Right) -->
                     <div
-                        class="bg-brand-green text-white p-5 rounded-[12px] border border-white/90 shadow-lg text-sm leading-relaxed">
+                        class="bg-brand-green text-white p-5 rounded-[5px] border border-white/90 shadow-lg text-md leading-relaxed">
                         Book Trusted Local Services, Order From Nearby Stores, And Get Everything Delivered To Your
                         Doorstep All In One Powerful Hyperlocal App.
                     </div>
@@ -218,11 +218,26 @@
                                     <div class="flex items-center justify-between mt-2 not-italic">
                                         <div class="flex gap-0.5 text-orange-400">
                                             <!-- Star SVGs reduced to w-3 h-3 -->
-                                            <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
-                                            <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
-                                            <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
-                                            <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
-                                            <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                            </svg>
+                                            <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                            </svg>
+                                            <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                            </svg>
+                                            <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                            </svg>
+                                            <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                            </svg>
                                         </div>
                                         <div class="text-[12px] md:text-[14px] font-fashion flex items-center gap-2">
                                             <span class="opacity-60 font-light">•</span>
@@ -238,36 +253,53 @@
         </div>
     </section>
 
-        </div>
-    </section>
-
     <!-- Logo Showcase Section (Auto-Scrolling Marquee) -->
     <section class="py-10 bg-white border-t border-gray-50 flex items-center overflow-hidden">
         <div class="relative w-full">
             <div class="flex animate-marquee whitespace-nowrap gap-12 pause-on-hover">
                 <!-- First set of logos -->
-                <div class="flex items-center gap-12 md:gap-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-700">
-                    <img src="https://via.placeholder.com/120x40?text=naturals" alt="naturals" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/100x40?text=Star" alt="Star" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/140x40?text=nails+BEYOND" alt="nails BEYOND" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/160x40?text=CHERAN+GROUP" alt="Cheran Group" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/120x40?text=TANCOIR" alt="TANCOIR" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/100x40?text=TEDx" alt="TEDx" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/140x40?text=bioneemtec" alt="bioneemtec" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/140x40?text=RESONANCE" alt="RESONANCE" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/120x40?text=Truck+taxi" alt="Truck Taxi" class="h-6 md:h-10 object-contain">
+                <div
+                    class="flex items-center gap-12 md:gap-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+                    <img src="https://via.placeholder.com/120x40?text=naturals" alt="naturals"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/100x40?text=Star" alt="Star"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/140x40?text=nails+BEYOND" alt="nails BEYOND"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/160x40?text=CHERAN+GROUP" alt="Cheran Group"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/120x40?text=TANCOIR" alt="TANCOIR"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/100x40?text=TEDx" alt="TEDx"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/140x40?text=bioneemtec" alt="bioneemtec"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/140x40?text=RESONANCE" alt="RESONANCE"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/120x40?text=Truck+taxi" alt="Truck Taxi"
+                        class="h-6 md:h-10 object-contain">
                 </div>
                 <!-- Duplicate set for seamless loop -->
-                <div class="flex items-center gap-12 md:gap-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-700">
-                    <img src="https://via.placeholder.com/120x40?text=naturals" alt="naturals" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/100x40?text=Star" alt="Star" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/140x40?text=nails+BEYOND" alt="nails BEYOND" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/160x40?text=CHERAN+GROUP" alt="Cheran Group" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/120x40?text=TANCOIR" alt="TANCOIR" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/100x40?text=TEDx" alt="TEDx" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/140x40?text=bioneemtec" alt="bioneemtec" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/140x40?text=RESONANCE" alt="RESONANCE" class="h-6 md:h-10 object-contain">
-                    <img src="https://via.placeholder.com/120x40?text=Truck+taxi" alt="Truck Taxi" class="h-6 md:h-10 object-contain">
+                <div
+                    class="flex items-center gap-12 md:gap-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+                    <img src="https://via.placeholder.com/120x40?text=naturals" alt="naturals"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/100x40?text=Star" alt="Star"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/140x40?text=nails+BEYOND" alt="nails BEYOND"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/160x40?text=CHERAN+GROUP" alt="Cheran Group"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/120x40?text=TANCOIR" alt="TANCOIR"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/100x40?text=TEDx" alt="TEDx"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/140x40?text=bioneemtec" alt="bioneemtec"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/140x40?text=RESONANCE" alt="RESONANCE"
+                        class="h-6 md:h-10 object-contain">
+                    <img src="https://via.placeholder.com/120x40?text=Truck+taxi" alt="Truck Taxi"
+                        class="h-6 md:h-10 object-contain">
                 </div>
             </div>
         </div>
@@ -279,13 +311,14 @@
         <div class="absolute top-0 right-0 w-1/3 h-full bg-brand-green/10 blur-[120px] rounded-full -mr-20"></div>
 
         <div class="container mx-auto px-6 text-center mb-12 relative z-10">
-            <h2 class="text-3xl md:text-5xl lg:text-5xl font-fashion text-gray-900 mb-6 leading-tight">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-fashion text-gray-900 mb-6 leading-tight">
                 <span class="font-semibold">Place Your</span> <span
-                    class="bg-brand-green text-white px-8 py-5 rounded-full inline-block font-medium ml-2 shadow-lg">Order
+                    class="bg-brand-green text-white px-8 py-3 rounded-full inline-block font-medium ml-2 shadow-lg">Order
                     Today</span>
             </h2>
-            <p class="text-gray-600 text-sm md:text-lg max-w-3xl mx-auto font-medium leading-relaxed">
-                Book Trusted Local Services, Order From Nearby Stores, And Get Everything Delivered To Your Doorstep All In One Powerful Hyperlocal App
+            <p class="text-black text-sm md:text-lg max-w-3xl mx-auto font-medium leading-relaxed">
+                Book Trusted Local Services, Order From Nearby Stores, And Get Everything Delivered To Your Doorstep All
+                In One Powerful Hyperlocal App
             </p>
         </div>
 
@@ -295,44 +328,70 @@
                 <div class="flex space-x-3 md:space-x-5 animate-marquee pause-on-hover px-4">
                     <!-- Premium Large Cards: Best Practices Design -->
                     <!-- Card 1 -->
-                    <div class="w-72 md:w-[400px] lg:w-[480px] aspect-[16/10] rounded-[24px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
+                    <div
+                        class="w-72 md:w-[400px] lg:w-[480px] aspect-[16/10] rounded-[12px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
                         <img src="images/kebab.png" alt="Grilled Kebab" class="w-full h-full object-cover">
-                        <div class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                             <span class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste Now</span>
+                        <div
+                            class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <span
+                                class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste
+                                Now</span>
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="w-72 md:w-[400px] lg:w-[480px] aspect-[16/10] rounded-[24px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
+                    <div
+                        class="w-72 md:w-[400px] lg:w-[480px] aspect-[16/10] rounded-[12px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
                         <img src="images/roast_chicken.png" alt="Roast Chicken" class="w-full h-full object-cover">
-                        <div class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                             <span class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste Now</span>
+                        <div
+                            class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <span
+                                class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste
+                                Now</span>
                         </div>
                     </div>
                     <!-- Card 3 -->
-                    <div class="w-72 md:w-[400px] lg:w-[480px] aspect-[16/10] rounded-[24px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
-                        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab752?auto=format&fit=crop&q=80&w=800" alt="Coffee" class="w-full h-full object-cover">
-                        <div class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                             <span class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste Now</span>
+                    <div
+                        class="w-72 md:w-[400px] lg:w-[480px] aspect-[16/10] rounded-[12px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab752?auto=format&fit=crop&q=80&w=800"
+                            alt="Coffee" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <span
+                                class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste
+                                Now</span>
                         </div>
                     </div>
                     <!-- Card 4 -->
-                    <div class="w-72 md:w-[400px] lg:w-[480px] aspect-[16/10] rounded-[24px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
-                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=800" alt="Salad" class="w-full h-full object-cover">
-                        <div class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                             <span class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste Now</span>
+                    <div
+                        class="w-72 md:w-[400px] lg:w-[480px] aspect-[16/10] rounded-[12px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=800"
+                            alt="Salad" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <span
+                                class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste
+                                Now</span>
                         </div>
                     </div>
                     <!-- Duplicate Set for Seamless Loop -->
-                    <div class="w-72 md:w-[400px] lg:w-[480px] aspect-[16/10] rounded-[24px] overflow-hidden flex-shrink-0 relative group">
+                    <div
+                        class="w-72 md:w-[400px] lg:w-[480px] aspect-[16/10] rounded-[12px] overflow-hidden flex-shrink-0 relative group">
                         <img src="images/kebab.png" alt="Grilled Kebab" class="w-full h-full object-cover">
-                        <div class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                             <span class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste Now</span>
+                        <div
+                            class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <span
+                                class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste
+                                Now</span>
                         </div>
                     </div>
-                    <div class="w-72 md:w-[400px] lg:w-[480px] aspect-[16/10] rounded-[24px] overflow-hidden flex-shrink-0 relative group">
+                    <div
+                        class="w-72 md:w-[400px] lg:w-[480px] aspect-[16/10] rounded-[12px] overflow-hidden flex-shrink-0 relative group">
                         <img src="images/roast_chicken.png" alt="Roast Chicken" class="w-full h-full object-cover">
-                        <div class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                             <span class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste Now</span>
+                        <div
+                            class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <span
+                                class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste
+                                Now</span>
                         </div>
                     </div>
                 </div>
@@ -342,44 +401,74 @@
             <div class="flex overflow-hidden group/marquee">
                 <div class="flex space-x-3 md:space-x-5 animate-marquee-reverse pause-on-hover px-4">
                     <!-- Card 1 -->
-                    <div class="w-64 md:w-[350px] lg:w-[420px] aspect-[16/10] rounded-[24px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
-                        <img src="https://images.unsplash.com/photo-1574129810325-e17038647a2e?auto=format&fit=crop&q=80&w=800" alt="Pizza" class="w-full h-full object-cover">
-                        <div class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                             <span class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste Now</span>
+                    <div
+                        class="w-64 md:w-[350px] lg:w-[420px] aspect-[16/10] rounded-[12px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1574129810325-e17038647a2e?auto=format&fit=crop&q=80&w=800"
+                            alt="Pizza" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <span
+                                class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste
+                                Now</span>
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="w-64 md:w-[350px] lg:w-[420px] aspect-[16/10] rounded-[24px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
-                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800" alt="Grill" class="w-full h-full object-cover">
-                        <div class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                             <span class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste Now</span>
+                    <div
+                        class="w-64 md:w-[350px] lg:w-[420px] aspect-[16/10] rounded-[12px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800"
+                            alt="Grill" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <span
+                                class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste
+                                Now</span>
                         </div>
                     </div>
                     <!-- Card 3 -->
-                    <div class="w-64 md:w-[350px] lg:w-[420px] aspect-[16/10] rounded-[24px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
-                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7bb7445?auto=format&fit=crop&q=80&w=800" alt="Pancakes" class="w-full h-full object-cover">
-                        <div class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                             <span class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste Now</span>
+                    <div
+                        class="w-64 md:w-[350px] lg:w-[420px] aspect-[16/10] rounded-[12px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7bb7445?auto=format&fit=crop&q=80&w=800"
+                            alt="Pancakes" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <span
+                                class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste
+                                Now</span>
                         </div>
                     </div>
                     <!-- Card 4 -->
-                    <div class="w-64 md:w-[350px] lg:w-[420px] aspect-[16/10] rounded-[24px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
-                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=800" alt="Delicious" class="w-full h-full object-cover">
-                        <div class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                             <span class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste Now</span>
+                    <div
+                        class="w-64 md:w-[350px] lg:w-[420px] aspect-[16/10] rounded-[12px] overflow-hidden transition-all duration-500 flex-shrink-0 cursor-pointer relative group shadow-sm hover:scale-[1.02] hover:shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=800"
+                            alt="Delicious" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <span
+                                class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste
+                                Now</span>
                         </div>
                     </div>
                     <!-- Duplicate Set for Seamless Loop -->
-                    <div class="w-64 md:w-[350px] lg:w-[420px] aspect-[16/10] rounded-[24px] overflow-hidden flex-shrink-0 relative group">
-                        <img src="https://images.unsplash.com/photo-1574129810325-e17038647a2e?auto=format&fit=crop&q=80&w=800" alt="Pizza" class="w-full h-full object-cover">
-                        <div class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                             <span class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste Now</span>
+                    <div
+                        class="w-64 md:w-[350px] lg:w-[420px] aspect-[16/10] rounded-[12px] overflow-hidden flex-shrink-0 relative group">
+                        <img src="https://images.unsplash.com/photo-1574129810325-e17038647a2e?auto=format&fit=crop&q=80&w=800"
+                            alt="Pizza" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <span
+                                class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste
+                                Now</span>
                         </div>
                     </div>
-                    <div class="w-64 md:w-[350px] lg:w-[420px] aspect-[16/10] rounded-[24px] overflow-hidden flex-shrink-0 relative group">
-                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800" alt="Grill" class="w-full h-full object-cover">
-                        <div class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                             <span class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste Now</span>
+                    <div
+                        class="w-64 md:w-[350px] lg:w-[420px] aspect-[16/10] rounded-[12px] overflow-hidden flex-shrink-0 relative group">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800"
+                            alt="Grill" class="w-full h-full object-cover">
+                        <div
+                            class="absolute inset-x-0 bottom-0 p-6 flex justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <span
+                                class="bg-brand-green text-white px-10 py-2.5 rounded-xl text-lg font-bold font-manjari shadow-xl">Taste
+                                Now</span>
                         </div>
                     </div>
                 </div>
@@ -390,12 +479,13 @@
     <!-- What We Do Section -->
     <section class="py-12 bg-white relative font-manjari">
         <div class="container mx-auto px-6 text-center mb-16">
-            <h2 class="text-3xl md:text-5xl font-fashion font-semibold text-gray-900 mb-4">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-fashion font-semibold text-gray-900 mb-4">
                 What <span class="bg-brand-green text-white px-6 py-1.5 rounded-full inline-block ml-1 shadow-md">We
                     Do</span>
             </h2>
             <p class="text-black-500 text-sm md:text-lg max-w-2xl mx-auto font-medium">
-                We handle food, grocery, parcel, and wholesale delivery with care and speed.<br class="hidden md:block" />
+                We handle food, grocery, parcel, and wholesale delivery with care and speed.<br
+                    class="hidden md:block" />
                 From urgent shipments to scheduled services, we cover all local needs.<br class="hidden md:block" />
                 Trusted delivery partner for homes, shops, and businesses.
             </p>
@@ -425,7 +515,7 @@
                         </p>
                         <!-- Exact Design: Line Under Text -->
                         <div
-                            class="h-1 w-16 bg-brand-green mx-auto rounded-full group-hover:w-24 transition-all duration-500">
+                            class="h-0.5 w-28 bg-brand-green mx-auto rounded-full group-hover:w-24 transition-all duration-500">
                         </div>
                     </div>
                 </div>
@@ -452,7 +542,7 @@
                         </p>
                         <!-- Exact Design: Line Under Text -->
                         <div
-                            class="h-1 w-16 bg-brand-green mx-auto rounded-full group-hover:w-24 transition-all duration-500">
+                            class="h-0.5 w-28 bg-brand-green mx-auto rounded-full group-hover:w-24 transition-all duration-500">
                         </div>
                     </div>
                 </div>
@@ -478,7 +568,7 @@
                         </p>
                         <!-- Exact Design: Line Under Text -->
                         <div
-                            class="h-1 w-16 bg-brand-green mx-auto rounded-full group-hover:w-24 transition-all duration-500">
+                            class="h-0.5 w-28 bg-brand-green mx-auto rounded-full group-hover:w-24 transition-all duration-500">
                         </div>
                     </div>
                 </div>
@@ -490,17 +580,17 @@
     <section class="py-12 bg-white relative overflow-hidden font-manjari" id="interactive-app-section">
         <!-- Background Gradient Glow (Right Side) -->
         <div
-            class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-lightGreen/100 to-transparent pointer-events-none">
+            class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-green/20 to-transparent pointer-events-none">
         </div>
 
         <div class="container mx-auto px-6 mb-16 text-center relative z-10">
-            <h2 class="text-3xl md:text-5xl font-fashion font-semibold text-gray-900 leading-tight">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-fashion font-semibold text-gray-900 leading-tight">
                 One App. <span class="bg-brand-green text-white px-8 py-2 rounded-full inline-block ml-1 shadow-lg">All
                     Local Needs !</span>
             </h2>
         </div>
 
-        <div class="container mx-auto px-6 max-w-7xl relative z-20">
+        <div class="container mx-auto px-6 max-w-[1400px] relative z-20">
             <div class="grid lg:grid-cols-[220px_1fr_400px] gap-8 xl:gap-16 items-center">
 
                 <!-- Sidebar: Tabs -->
@@ -511,7 +601,7 @@
                             About Us
                         </h3>
                         <div
-                            class="h-[1px] w-56 bg-gray-100 group-[.active]:bg-brand-green/30 transition-all duration-500 rounded-full relative">
+                            class="h-[1px] w-60 bg-gray-100 group-[.active]:bg-brand-green/30 transition-all duration-500 rounded-full relative">
                             <div
                                 class="absolute top-0 left-0 h-full w-0 group-[.active]:w-full bg-brand-green transition-all duration-500 rounded-full">
                             </div>
@@ -523,7 +613,7 @@
                             Vision
                         </h3>
                         <div
-                            class="h-[1px] w-56 bg-gray-100 group-[.active]:bg-brand-green/30 transition-all duration-500 rounded-full relative">
+                            class="h-[1px] w-60 bg-gray-100 group-[.active]:bg-brand-green/30 transition-all duration-500 rounded-full relative">
                             <div
                                 class="absolute top-0 left-0 h-full w-0 group-[.active]:w-full bg-brand-green transition-all duration-500 rounded-full">
                             </div>
@@ -535,7 +625,7 @@
                             Mission
                         </h3>
                         <div
-                            class="h-[1px] w-56 bg-gray-100 group-[.active]:bg-brand-green/30 transition-all duration-500 rounded-full relative">
+                            class="h-[1px] w-60 bg-gray-100 group-[.active]:bg-brand-green/30 transition-all duration-500 rounded-full relative">
                             <div
                                 class="absolute top-0 left-0 h-full w-0 group-[.active]:w-full bg-brand-green transition-all duration-500 rounded-full">
                             </div>
@@ -545,7 +635,7 @@
 
                 <!-- Center: Image -->
                 <div
-                    class="relative group rounded-3xl overflow-hidden shadow-xl aspect-video md:h-[350px] lg:h-[400px] bg-white w-full">
+                    class="relative group rounded-lg overflow-hidden aspect-video md:h-[350px] lg:h-[400px] bg-white w-full">
                     <div id="app-image-container" class="w-full h-full relative">
                         <img src="images/dss-delivery.webp" alt="Delivery"
                             class="app-slide active absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-100 z-10 brightness-95">
@@ -557,7 +647,7 @@
 
                     <!-- Exact Design: White Shadow Bottom to Center -->
                     <div
-                        class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent opacity-90 pointer-events-none z-20">
+                        class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent opacity-50 pointer-events-none z-20">
                     </div>
 
                     <!-- Pagination Dots -->
@@ -576,27 +666,36 @@
                         <div id="content-about"
                             class="tab-content active transition-all duration-500 translate-x-0 opacity-100">
                             <p class="text-gray-600 text-sm md:text-lg leading-relaxed font-normal">
-                                Everything you need, all in one place — from groceries and food delivery to parcels, wholesale transport, and doorstep pickup services. DSS Delivery Service brings together all your daily and business delivery needs into a single, reliable platform designed for speed, safety, and convenience.
+                                Everything you need, all in one place — from groceries and food delivery to parcels,
+                                wholesale transport, and doorstep pickup services. DSS Delivery Service brings together
+                                all your daily and business delivery needs into a single, reliable platform designed for
+                                speed, safety, and convenience.
                             </p>
                             <p class="text-gray-600 text-sm md:text-lg leading-relaxed font-normal mt-6">
-                                No more delays, no more confusion, and no need to depend on multiple service providers. Whether it’s an urgent same-day delivery, a scheduled service, or regular transport between Tenkasi and nearby areas, we ensure smooth and timely execution every time.
+                                No more delays, no more confusion, and no need to depend on multiple service providers.
+                                Whether it’s an urgent same-day delivery, a scheduled service, or regular transport
+                                between Tenkasi and nearby areas, we ensure smooth and timely execution every time.
                             </p>
                         </div>
                         <div id="content-vision"
                             class="tab-content absolute top-0 left-0 w-full transition-all duration-500 translate-x-12 opacity-0 hidden">
                             <p class="text-gray-600 text-sm md:text-lg leading-relaxed font-normal">
-                                To revolutionize the local delivery landscape by becoming the most trusted one-stop platform, empowering the Tenkasi community through seamless connectivity and a relentless commitment to service excellence.
+                                To revolutionize the local delivery landscape by becoming the most trusted one-stop
+                                platform, empowering the Tenkasi community through seamless connectivity and a
+                                relentless commitment to service excellence.
                             </p>
                         </div>
                         <div id="content-mission"
                             class="tab-content absolute top-0 left-0 w-full transition-all duration-500 translate-x-12 opacity-0 hidden">
                             <p class="text-gray-600 text-sm md:text-lg leading-relaxed font-normal">
-                                Our mission is to empower the Tenkasi community by providing a unified, high-speed delivery ecosystem for all life and business needs—from daily groceries to wholesale transport—ensuring absolute safety and reliability in every mile.
+                                Our mission is to empower the Tenkasi community by providing a unified, high-speed
+                                delivery ecosystem for all life and business needs—from daily groceries to wholesale
+                                transport—ensuring absolute safety and reliability in every mile.
                             </p>
                         </div>
                     </div>
                     <div class="text-right lg:text-left">
-                        <a href="/about"
+                        <a href="about.html"
                             class="inline-block bg-brand-green text-white px-10 py-3 rounded-lg text-lg font-medium hover:bg-green-700 transition-all shadow-lg font-fashion text-center">
                             Know More
                         </a>
@@ -605,9 +704,6 @@
             </div>
         </div>
     </section>
-
-    <!-- One App Section Logic -->
-    <script src="js/one-app-interactive.js"></script>
 
     <!-- Video Promo Section -->
     <section class="py-16 bg-white overflow-hidden">
@@ -668,11 +764,12 @@
 
         <div class="container mx-auto px-6 text-center mb-16 relative z-10">
             <h2
-                class="inline-block bg-brand-green text-white px-10 py-3 rounded-full text-2xl md:text-4xl font-fashion font-semibold shadow-lg mb-8 tracking-wide">
+                class="inline-block bg-brand-green text-white px-10 py-3 rounded-full text-2xl md:text-3xl lg:text-4xl font-fashion font-semibold shadow-lg mb-8 tracking-wide">
                 WHAT YOU CAN FIND
             </h2>
             <p class="text-gray-600 text-sm md:text-lg max-w-4xl mx-auto font-medium leading-relaxed">
-                Food, grocery, and essentials delivery services. Parcel pickup, porter support, and wholesale distribution. Same-day delivery and transport from Tenkasi to Tirunelveli.
+                Food, grocery, and essentials delivery services. Parcel pickup, porter support, and wholesale
+                distribution. Same-day delivery and transport from Tenkasi to Tirunelveli.
             </p>
         </div>
 
@@ -683,7 +780,7 @@
                 <div class="flex space-x-8 px-4">
                     <!-- Grocery -->
                     <div
-                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-3xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-lg overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=600"
                             alt="Grocery" class="w-full h-full object-cover">
                         <div
@@ -694,7 +791,7 @@
 
                     <!-- Foods -->
                     <div
-                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-3xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-lg overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=600"
                             alt="Foods" class="w-full h-full object-cover">
                         <div
@@ -705,7 +802,7 @@
 
                     <!-- Pharmacy -->
                     <div
-                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-3xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-lg overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbbb88?auto=format&fit=crop&q=80&w=600"
                             alt="Pharmacy" class="w-full h-full object-cover">
                         <div
@@ -716,7 +813,7 @@
 
                     <!-- Retail -->
                     <div
-                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-3xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-lg overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=600"
                             alt="Retail" class="w-full h-full object-cover">
                         <div
@@ -727,7 +824,7 @@
 
                     <!-- Fruits -->
                     <div
-                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-3xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-lg overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&q=80&w=600"
                             alt="Fruits" class="w-full h-full object-cover">
                         <div
@@ -740,7 +837,7 @@
                 <!-- Duplicate for Smooth Scrolling -->
                 <div class="flex space-x-8 px-4" aria-hidden="true">
                     <div
-                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-3xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-lg overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
                         <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=600"
                             alt="Grocery" class="w-full h-full object-cover">
                         <div
@@ -749,7 +846,7 @@
                         </div>
                     </div>
                     <div
-                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-3xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-lg overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
                         <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=600"
                             alt="Foods" class="w-full h-full object-cover">
                         <div
@@ -758,7 +855,7 @@
                         </div>
                     </div>
                     <div
-                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-3xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-lg overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
                         <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbbb88?auto=format&fit=crop&q=80&w=600"
                             alt="Pharmacy" class="w-full h-full object-cover">
                         <div
@@ -767,7 +864,7 @@
                         </div>
                     </div>
                     <div
-                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-3xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-lg overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
                         <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=600"
                             alt="Retail" class="w-full h-full object-cover">
                         <div
@@ -776,7 +873,7 @@
                         </div>
                     </div>
                     <div
-                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-3xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+                        class="w-64 md:w-72 lg:w-80 h-96 md:h-[450px] relative rounded-lg overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
                         <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&q=80&w=600"
                             alt="Fruits" class="w-full h-full object-cover">
                         <div
@@ -1034,6 +1131,8 @@
     <div id="footer-placeholder"></div>
 
     <!-- Scripts -->
+
+    <script src="js/one-app-interactive.js"></script>
     <script src="js/video-modal.js"></script>
     <script src="js/testimonials.js"></script>
     <script src="js/header.js"></script>

@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <!-- Column 2: Quick Links -->
                     <div class="flex flex-col space-y-3 pt-2">
                         <a href="index.html" class="text-[17px] font-bold hover:text-[#009444] transition-colors">Home</a>
-                        <a href="#" class="text-[17px] font-bold hover:text-[#009444] transition-colors">About Us</a>
+                        <a href="about.html" class="text-[17px] font-bold hover:text-[#009444] transition-colors">About Us</a>
                         <a href="contact.html" class="text-[17px] font-bold hover:text-[#009444] transition-colors">Contact Us</a>
                     </div>
 
@@ -42,14 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <img src="assets/icons/address.svg" class="w-5 h-5" alt="Location Icon" loading="lazy" />
                             </div>
                             <p class="text-[13px] font-bold leading-tight">
-                                Mini Hall, Commercial Complex 2nd Floor, TVS Emerald Green Hills, Perungalathur-600063
+                                4074 Ebert Summit Suite 375<br>
+                                Tenkasi
                             </p>
                         </div>
                         <div class="flex items-center space-x-3">
                             <div class="text-[#009444] shrink-0">
                                 <img src="assets/icons/phone.svg" class="w-5 h-5" alt="Phone Icon" loading="lazy" />
                             </div>
-                            <p class="text-[14px] font-bold">+91-98844 56686</p>
+                            <p class="text-[14px] font-bold">+91 87569 78235</p>
                         </div>
                         <div class="flex items-center space-x-3">
                             <div class="text-[#009444] shrink-0">
