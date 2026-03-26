@@ -44,8 +44,13 @@
             <img src="images/About-banner.webp" alt="Delivery Hero" class="w-full h-full object-cover">
         </div>
 
-        <!-- Top Shadow Overlay (As per Design) -->
-        <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/40 via-black/10 to-transparent z-10 pointer-events-none"></div>
+        <!-- Darken Overlay -->
+        <div class="absolute inset-0 bg-black/40 z-0"></div>
+
+        <!-- Top Shadow Gradient (Banner Shadow) -->
+        <div
+            class="absolute inset-x-0 top-0 h-[250px] bg-gradient-to-b from-white/95 via-white/50 to-transparent z-10 pointer-events-none">
+        </div>
 
         <!-- Right Side White Shadow/Gradient Overlay -->
         <div
@@ -97,7 +102,9 @@
                 <h2
                     class="font-fashion text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 flex flex-col sm:flex-row items-center justify-center gap-4">
                     One App.
-                    <span class="bg-brand-green text-white px-6 sm:px-10 py-2 sm:py-2.5 rounded-full text-xl sm:text-3xl lg:text-4xl shadow-lg">All Local
+                    <span
+                        class="bg-brand-green text-white px-6 sm:px-10 py-2 sm:py-2.5 rounded-full text-xl sm:text-3xl lg:text-4xl shadow-lg">All
+                        Local
                         Needs !</span>
                 </h2>
             </div>
@@ -170,7 +177,8 @@
                 <div class="flex flex-col justify-between h-full space-y-8">
                     <div id="about-tab-content-container" class="relative">
                         <div id="tab-content-text" class="opacity-100 transition-opacity duration-500">
-                            <p class="text-gray-600 text-sm md:text-[18px] leading-relaxed md:leading-[1.8] font-normal text-justify sm:text-left">
+                            <p
+                                class="text-gray-600 text-sm md:text-[18px] leading-relaxed md:leading-[1.8] font-normal text-justify sm:text-left">
                                 Tenkasi DSS Delivery Service is built with a simple mission — to make local delivery
                                 faster, easier, and more reliable for everyone. We understand the everyday challenges
                                 people and businesses face when transporting goods, from groceries and parcels to shop
@@ -197,14 +205,15 @@
 
                 <!-- Right Column: Stacked Images -->
                 <div class="flex flex-col md:flex-row lg:flex-col gap-6 md:gap-8 lg:space-y-8 lg:gap-0">
-                    <div class="rounded-xl overflow-hidden shadow-xl aspect-video h-[200px] sm:h-[280px] bg-gray-50 flex-1">
-                        <img id="primary-tab-img" src="images/about_delivery_scene.png" alt="Featured Image"
+                    <div
+                        class="rounded-xl overflow-hidden shadow-xl aspect-video h-[200px] sm:h-[280px] bg-gray-50 flex-1">
+                        <img id="primary-tab-img" src="./images/dss-delivery.webp" alt="Featured Image"
                             class="w-full h-full object-cover transition-opacity duration-500">
                     </div>
-                    <div class="rounded-xl overflow-hidden shadow-xl aspect-video h-[200px] sm:h-[280px] bg-gray-50 flex-1">
-                        <img id="secondary-tab-img"
-                            src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&q=80&w=600"
-                            alt="Support Image" class="w-full h-full object-cover transition-opacity duration-500">
+                    <div
+                        class="rounded-xl overflow-hidden shadow-xl aspect-video h-[200px] sm:h-[280px] bg-gray-50 flex-1">
+                        <img id="secondary-tab-img" src="./images/Deilvery-dss-2.webp" alt="Support Image"
+                            class="w-full h-full object-cover transition-opacity duration-500">
                     </div>
                 </div>
             </div>
@@ -214,27 +223,41 @@
 
 
     <!-- Video Promo Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4 max-w-[1400px]">
-            <div class="relative w-full rounded-[1.5rem] sm:rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-2xl group cursor-pointer"
-                onclick="openVideoModal()">
-                <!-- Video Cover Image -->
-                <img src="images/delivery_video.png" alt="Delivery Night Scene"
-                    class="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105">
+    <section class="py-16 bg-white overflow-hidden">
+        <div class="container mx-auto px-6 max-w-[1400px]">
+            <div class="relative w-full rounded-[1.5rem] sm:rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-2xl group cursor-pointer aspect-[21/9] bg-black"
+                onclick="const cover = this.querySelector('.video-cover'); const iframe = this.querySelector('iframe'); cover.style.opacity = '0'; cover.style.pointerEvents = 'none'; iframe.src += '&autoplay=1';">
 
-                <!-- Dark Overlay Gradient -->
-                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
+                <!-- Video Cover Layer -->
+                <div class="video-cover absolute inset-0 z-20 transition-opacity duration-700">
+                    <!-- Video Cover Image -->
+                    <img src="images/delivery_video.png" alt="Delivery Night Scene"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
 
-                <!-- Play Button Center -->
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <button
-                        class="w-20 h-20 md:w-28 md:h-28 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] focus:outline-none">
-                        <svg class="w-full h-full text-white" viewBox="0 0 100 100" fill="currentColor">
-                            <path
-                                d="M78.6,48.7c3.7,2.2,3.7,7.6,0,9.8L31.2,84.1C27.5,86.3,23,83.6,23,79.2V20.8c0-4.4,4.5-7.1,8.2-4.9L78.6,48.7z" />
-                        </svg>
-                    </button>
+                    <!-- Dark Overlay -->
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-500">
+                    </div>
+
+                    <!-- Play Button Center -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div
+                            class="w-20 h-20 md:w-32 md:h-32 rounded-full flex items-center justify-center group/play scale-90 group-hover:scale-100 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-white/20 rounded-full blur-xl animate-pulse"></div>
+                            <svg class="relative z-10 w-12 h-12 md:w-20 md:h-20 text-white drop-shadow-2xl shadow-white/50"
+                                viewBox="0 0 100 100" fill="currentColor">
+                                <path
+                                    d="M78.6,48.7c3.7,2.2,3.7,7.6,0,9.8L31.2,84.1C27.5,86.3,23,83.6,23,79.2V20.8c0-4.4,4.5-7.1,8.2-4.9L78.6,48.7z" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Inline Video Iframe -->
+                <iframe class="absolute inset-0 w-full h-full z-10"
+                    src="https://www.youtube.com/embed/ncN_n7aXoJc?rel=0&modestbranding=1&showinfo=0"
+                    title="DSS Promotional Video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -455,36 +478,11 @@
     <!-- Footer Placeholder -->
     <div id="footer-placeholder"></div>
 
-    <!-- Video Modal -->
-    <div id="videoModal"
-        class="fixed inset-0 z-[200] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
-        <!-- Backdrop -->
-        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeVideoModal()"></div>
 
-        <!-- Modal Content -->
-        <div class="relative z-10 w-[95%] max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl scale-95 transition-transform duration-300 transform"
-            id="videoModalContent">
-            <!-- Close Button -->
-            <button onclick="closeVideoModal()"
-                class="absolute top-4 right-4 z-20 w-10 h-10 bg-black/50 hover:bg-brand-green text-white rounded-full flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-white">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-
-            <!-- Video Container (16:9 Aspect Ratio) -->
-            <div class="relative pt-[56.25%] bg-black">
-                <iframe id="promotionalVideo" class="absolute inset-0 w-full h-full" src="" title="Promotional Video"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
 
     <!-- Scripts -->
     <script src="js/ap-1.js"></script>
-    <script src="js/video-modal.js"></script>
+
     <script src="js/testimonials.js"></script>
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>

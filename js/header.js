@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerHTML = `
         <header class="absolute top-0 left-0 w-full z-[100] px-6 md:px-12 py-6 md:py-8 flex items-center justify-between font-manjari">
             <!-- Header Top Shadow (White Gradient) -->
-            <div class="absolute top-0 left-0 w-full h-[120px] md:h-[200px] bg-gradient-to-b from-white/90 via-white/50 to-transparent -z-10 pointer-events-none"></div>
+            <div class="absolute top-0 left-0 w-full h-[120px] md:h-[250px] bg-gradient-to-b from-white/90 via-white/50 to-transparent -z-10 pointer-events-none"></div>
 
             <!-- Brand -->
             <div class="text-3xl md:text-4xl font-extrabold tracking-tighter text-gray-900 cursor-pointer select-none z-[110]" onclick="window.location.href='index.html'">
@@ -64,6 +64,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerPlaceholder = document.getElementById('header-placeholder');
     if (headerPlaceholder) {
         headerPlaceholder.innerHTML = headerHTML;
+
+        // Fade in the header shadow after a short delay
+        const topShadow = headerPlaceholder.querySelector('.bg-gradient-to-b');
+        if (topShadow) {
+            topShadow.classList.add('opacity-0', 'transition-opacity', 'duration-1000');
+            setTimeout(() => {
+                topShadow.classList.replace('opacity-0', 'opacity-100');
+            }, 100);
+        }
 
         // Initialize Menu Logic
         const menuToggle = document.getElementById('mobile-menu-toggle');

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | DSS Delivery Services</title>
     <!-- Tailwind CSS Play CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Manjari:wght@100;400;700&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/fashion-fetish" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -37,42 +40,52 @@
         }
     </script>
 </head>
+
 <body class="bg-white overflow-x-hidden">
 
     <!-- Header Placeholder -->
     <div id="header-placeholder" class="fixed top-0 left-0 w-full z-[100]"></div>
 
     <!-- Contact Page Banner -->
-    <section class="relative min-h-screen flex flex-col items-center justify-end overflow-hidden pb-12 sm:pb-8 pt-32 bg-[url('images/contact-banner.webp')] bg-cover bg-center">
-        
+    <section
+        class="relative min-h-screen flex flex-col items-center justify-end overflow-hidden pb-12 sm:pb-8 pt-32 bg-[url('images/contact-banner.webp')] bg-cover bg-center">
+        <!-- Darken Overlay -->
+        <div class="absolute inset-0 bg-black/40 z-0"></div>
 
-        
+        <!-- Top Shadow Gradient (Banner Shadow) -->
+        <!-- <div
+            class="absolute inset-x-0 top-0 h-[250px] bg-gradient-to-b from-white/95 via-white/50 to-transparent z-10 pointer-events-none">
+        </div> -->
+
         <!-- Bottom White Fade (Tailwind) -->
-        <div class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-white to-transparent pointer-events-none z-10"></div>
+        <div
+            class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-white to-transparent pointer-events-none z-10">
+        </div>
 
         <!-- Main Content Wrapper -->
         <div class="relative z-30 w-full max-w-7xl px-4 flex flex-col items-center text-center">
 
             <!-- 2. Big Heading (Fashion Fetish Font - Reduced Size) -->
-            <h1 class="font-fashion text-3xl sm:text-5xl md:text-6xl lg:text-[4rem] font-bold text-[#111111] tracking-normal mb-6 sm:mb-4 leading-none selection:bg-brand-green/30">
+            <h1
+                class="font-fashion text-3xl sm:text-5xl md:text-6xl lg:text-[4rem] font-bold text-[#111111] tracking-normal mb-6 sm:mb-4 leading-none selection:bg-brand-green/30">
                 Get In <span class="text-brand-green">Touch With Us</span>
             </h1>
 
             <!-- 3. Reach Out Button (Wait-for-Action Style) -->
-            <button
-                id="reach-out-btn"
+            <button id="reach-out-btn"
                 class="bg-brand-green text-white px-5 sm:px-6 py-3 sm:py-3 rounded-full inline-flex items-center justify-center group font-quicksand overflow-hidden relative max-w-[70px] transition-all duration-[2000ms] ease-in-out whitespace-nowrap shadow-[0_15px_30px_rgba(0,148,68,0.25)] hover:bg-green-700 hover:-translate-y-1">
-                
+
                 <!-- Text (Initial: Hidden & No Width) -->
-                <span id="reach-out-text" 
+                <span id="reach-out-text"
                     class="font-fashion text-lg sm:text-lg font-bold opacity-0 max-w-0 overflow-hidden transition-all duration-[4000ms] ease-in-out">
                     Reach Out
                 </span>
 
                 <!-- Icon Container (Initial: Centered & Fading In) -->
-                <div id="reach-out-icon-container" 
+                <div id="reach-out-icon-container"
                     class="flex items-center justify-center opacity-0 -translate-x-6 transition-all duration-[2000ms] ease-in-out">
-                    <img src="assets/icons/delivery.svg" alt="Scooter" class="w-8 h-auto sm:w-10 group-hover:translate-x-1 transition-transform">
+                    <img src="assets/icons/delivery.svg" alt="Scooter"
+                        class="w-8 h-auto sm:w-10 group-hover:translate-x-1 transition-transform">
                 </div>
             </button>
         </div>
@@ -82,13 +95,15 @@
     <section class="py-12 sm:py-12 bg-white">
         <div class="container mx-auto px-4 max-w-6xl">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                
+
                 <!-- Left Side: Contact Information (Middle Aligned) -->
                 <div class="space-y-8 lg:pr-12">
                     <div class="space-y-4">
-                        <h2 class="font-montserrat text-4xl sm:text-5xl text-[#111111] font-medium leading-none">Contact Us</h2>
+                        <h2 class="font-montserrat text-4xl sm:text-5xl text-[#111111] font-medium leading-none">Contact
+                            Us</h2>
                         <p class="font-manjari text-base sm:text-lg text-gray-600 max-w-md leading-relaxed">
-                            We are committed to processing the information in order to contact you and talk about your project.
+                            We are committed to processing the information in order to contact you and talk about your
+                            project.
                         </p>
                     </div>
 
@@ -96,11 +111,14 @@
                         <!-- Email -->
                         <div class="flex items-center space-x-4">
                             <div class="text-brand-green font-bold">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
                             </div>
-                            <a href="mailto:dss@gmail.com" class="text-lg font-bold text-gray-800 hover:text-brand-green transition-colors">dss@gmail.com</a>
+                            <a href="mailto:dss@gmail.com"
+                                class="text-lg font-bold text-gray-800 hover:text-brand-green transition-colors">dss@gmail.com</a>
                         </div>
 
                         <!-- Address -->
@@ -119,7 +137,9 @@
                             <div class="text-brand-green font-bold">
                                 <img src="assets/icons/mobile-chat.svg" alt="" class="w-6 h-6">
                             </div>
-                            <a href="tel:+918756978235" class="text-lg font-bold text-gray-800 hover:text-brand-green transition-colors">+91 87569 78235</a>
+                            <a href="tel:+918756978235"
+                                class="text-lg font-bold text-gray-800 hover:text-brand-green transition-colors">+91
+                                87569 78235</a>
                         </div>
                     </div>
                 </div>
@@ -128,31 +148,46 @@
                 <div class="font-manjari bg-white">
                     <form action="#" class="space-y-4">
                         <!-- Name -->
-                        <div class="border border-gray-200 rounded-md p-4 focus-within:border-brand-green transition-all">
-                            <label for="name" class="text-sm font-bold text-gray-400 block mb-1">Name<span class="text-red-500 ml-1">*</span></label>
-                            <input type="text" id="name" required class="w-full bg-transparent border-none p-0 text-gray-900 focus:ring-0 outline-none placeholder:text-transparent" placeholder="Name">
+                        <div
+                            class="border border-gray-200 rounded-md p-4 focus-within:border-brand-green transition-all">
+                            <label for="name" class="text-sm font-bold text-gray-400 block mb-1">Name<span
+                                    class="text-red-500 ml-1">*</span></label>
+                            <input type="text" id="name" required
+                                class="w-full bg-transparent border-none p-0 text-gray-900 focus:ring-0 outline-none placeholder:text-transparent"
+                                placeholder="Name">
                         </div>
 
                         <!-- Email -->
-                        <div class="border border-gray-200 rounded-md p-4 focus-within:border-brand-green transition-all">
-                            <label for="email" class="text-sm font-bold text-gray-400 block mb-1">Email<span class="text-red-500 ml-1">*</span></label>
-                            <input type="email" id="email" required class="w-full bg-transparent border-none p-0 text-gray-900 focus:ring-0 outline-none placeholder:text-transparent" placeholder="Email">
+                        <div
+                            class="border border-gray-200 rounded-md p-4 focus-within:border-brand-green transition-all">
+                            <label for="email" class="text-sm font-bold text-gray-400 block mb-1">Email<span
+                                    class="text-red-500 ml-1">*</span></label>
+                            <input type="email" id="email" required
+                                class="w-full bg-transparent border-none p-0 text-gray-900 focus:ring-0 outline-none placeholder:text-transparent"
+                                placeholder="Email">
                         </div>
 
                         <!-- Website -->
-                        <div class="border border-gray-200 rounded-md p-4 focus-within:border-brand-green transition-all">
-                            <label for="website" class="text-sm font-bold text-gray-400 block mb-1">Website<span class="text-red-500 ml-1">*</span></label>
-                            <input type="url" id="website" required class="w-full bg-transparent border-none p-0 text-gray-900 focus:ring-0 outline-none placeholder:text-transparent" placeholder="Website">
+                        <div
+                            class="border border-gray-200 rounded-md p-4 focus-within:border-brand-green transition-all">
+                            <label for="website" class="text-sm font-bold text-gray-400 block mb-1">Website<span
+                                    class="text-red-500 ml-1">*</span></label>
+                            <input type="url" id="website" required
+                                class="w-full bg-transparent border-none p-0 text-gray-900 focus:ring-0 outline-none placeholder:text-transparent"
+                                placeholder="Website">
                         </div>
 
                         <!-- Message -->
-                        <div class="border border-gray-200 rounded-md p-4 focus-within:border-brand-green transition-all">
+                        <div
+                            class="border border-gray-200 rounded-md p-4 focus-within:border-brand-green transition-all">
                             <label for="message" class="text-sm font-bold text-gray-400 block mb-1">Message</label>
-                            <textarea id="message" rows="4" class="w-full bg-transparent border-none p-0 text-gray-900 focus:ring-0 outline-none placeholder:text-transparent resize-none"></textarea>
+                            <textarea id="message" rows="4"
+                                class="w-full bg-transparent border-none p-0 text-gray-900 focus:ring-0 outline-none placeholder:text-transparent resize-none"></textarea>
                         </div>
 
                         <!-- Submit Button -->
-                        <button type="submit" class="w-full pb-2 bg-brand-green text-white py-3 rounded-md text-xl font-bold hover:bg-green-700 transition-all transform active:scale-[0.99] shadow-none mt-2 font-manjari">
+                        <button type="submit"
+                            class="w-full pb-2 bg-brand-green text-white py-3 rounded-md text-xl font-bold hover:bg-green-700 transition-all transform active:scale-[0.99] shadow-none mt-2 font-manjari">
                             Submit
                         </button>
                     </form>
@@ -164,11 +199,9 @@
 
     <!-- Map Section (Full Width) -->
     <section class="w-full h-[350px] sm:h-[500px] grayscale hover:grayscale-0 transition-all duration-1000 mb-12">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31533.725895015!2d77.306!3d8.959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04299b66bb14c7%3A0xe5a3316e6f991f24!2sTenkasi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1710323000000!5m2!1sen!2sin" 
-            class="w-full h-full border-0" 
-            allowfullscreen="" 
-            loading="lazy" 
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31533.725895015!2d77.306!3d8.959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04299b66bb14c7%3A0xe5a3316e6f991f24!2sTenkasi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1710323000000!5m2!1sen!2sin"
+            class="w-full h-full border-0" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </section>
@@ -181,4 +214,5 @@
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
 </body>
+
 </html>

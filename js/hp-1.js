@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!btn || !text || !iconContainer) return;
 
-    // Start centered with icon, then expand
+    // Delayed start after Shadow (1.5s) and Heading (1.5s)
     setTimeout(() => {
         // Expand the background seamlessly
         btn.style.maxWidth = '500px'; 
@@ -24,4 +24,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 300);
 
     }, 800);
+
 });
