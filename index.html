@@ -870,6 +870,64 @@
                 -ms-overflow-style: none;
                 scrollbar-width: none;
             }
+
+            /* Testimonial card hover — green transition */
+            .testimonial-card {
+                background-color: #ffffff;
+                transition: background-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+                cursor: default;
+            }
+
+            .testimonial-card:hover {
+                background-color: #9ADCB9;
+                box-shadow: 0 24px 50px -12px rgba(0, 148, 68, 0.28);
+                transform: translateY(-6px);
+            }
+
+            .testimonial-card .card-name {
+                color: #009444;
+                transition: color 0.35s ease;
+            }
+
+            .testimonial-card:hover .card-name {
+                color: #00602C;
+            }
+
+            .testimonial-card .card-role {
+                color: #6b7280;
+                transition: color 0.35s ease;
+            }
+
+            .testimonial-card:hover .card-role {
+                color: #004D23;
+            }
+
+            .testimonial-card .card-body {
+                color: #4b5563;
+                transition: color 0.35s ease;
+            }
+
+            .testimonial-card:hover .card-body {
+                color: #004D23;
+            }
+
+            .testimonial-card .card-avatar-ring {
+                transition: box-shadow 0.35s ease;
+            }
+
+            .testimonial-card:hover .card-avatar-ring {
+                box-shadow: 0 0 0 3px #00944466;
+            }
+
+            /* Quote icon colour shift */
+            .testimonial-card .card-quote {
+                color: #009444;
+                transition: color 0.35s ease;
+            }
+
+            .testimonial-card:hover .card-quote {
+                color: #005c2a;
+            }
         </style>
 
         <!-- Right Side Background Decorative Circles -->
@@ -918,58 +976,67 @@
                 <div id="testimonialContainer"
                     class="flex overflow-x-auto hide-scrollbar snap-x snap-mandatory gap-6 pb-12 pt-4 px-4 -mx-4 items-stretch scroll-smooth">
 
-                    <!-- Card 1 -->
-                    <div
-                        class="snap-start shrink-0 w-[300px] sm:w-[350px] md:w-[500px] bg-white rounded-[16px] p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] flex flex-col justify-between transform transition-transform md:-translate-y-2">
-                        <div class="flex items-center gap-4 mb-6">
-                            <img src="images/avatar_1.png" alt="John Anderson"
-                                class="w-14 h-14 rounded-full object-cover shadow-sm">
-                            <div>
-                                <h3 class="font-fashion text-xl font-bold text-brand-green">John Anderson</h3>
-                            </div>
-                        </div>
-                        <p class="font-manjari text-gray-600 leading-relaxed text-[16px] mb-2">
+                    <!-- Card 1 — John Anderson -->
+                    <div class="testimonial-card snap-start shrink-0 w-[300px] sm:w-[350px] md:w-[500px] rounded-[16px] p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] flex flex-col justify-between">
+                        <!-- Quote Icon -->
+                        <svg class="card-quote w-8 h-8 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                        <p class="card-body font-manjari leading-relaxed text-[16px] mb-6 flex-1">
                             "Their attention to detail and creative design approach transformed our website into a
                             visually stunning and highly functional platform. We've seen a 30% increase in traffic since
                             the relaunch. I highly recommend them to anyone seeking professional web design services!"
                         </p>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div
-                        class="snap-start shrink-0 w-[300px] sm:w-[350px] md:w-[500px] bg-[#9ADCB9] rounded-[16px] p-8 shadow-[0_20px_40px_-15px_rgba(0,148,68,0.2)] flex flex-col justify-between">
-                        <div class="flex items-center gap-4 mb-6">
-                            <img src="images/avatar_2.png" alt="Mike Davis"
-                                class="w-14 h-14 rounded-full object-cover shadow-sm">
+                        <div class="flex items-center gap-4 mt-auto pt-4 border-t border-gray-100">
+                            <img src="images/Testi-1.jpeg" alt="John Anderson"
+                                class="card-avatar-ring w-14 h-14 rounded-full object-cover shadow-sm ring-2 ring-brand-green/20">
                             <div>
-                                <h3 class="font-fashion text-xl font-bold text-[#00602C]">Mike Davis</h3>
-                                <p class="font-manjari text-sm text-[#004D23] font-medium mt-0.5">CEO at Innovate</p>
+                                <h3 class="card-name font-fashion text-xl font-bold">John Anderson</h3>
+                                <p class="card-role font-manjari text-sm font-medium mt-0.5">Happy Customer</p>
                             </div>
                         </div>
-                        <p class="font-manjari text-[#004D23] leading-relaxed text-[16px] mb-2 font-medium">
+                    </div>
+
+                    <!-- Card 2 — Mike Davis -->
+                    <div class="testimonial-card snap-start shrink-0 w-[300px] sm:w-[350px] md:w-[500px] rounded-[16px] p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] flex flex-col justify-between">
+                        <!-- Quote Icon -->
+                        <svg class="card-quote w-8 h-8 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                        <p class="card-body font-manjari leading-relaxed text-[16px] mb-6 flex-1">
                             "Outstanding service! From start to finish, the entire delivery process was flawless.
                             The new app makes tracking orders incredibly simple, and the drivers are always polite and
                             prompt. Worth every penny."
                         </p>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div
-                        class="snap-start shrink-0 w-[300px] sm:w-[350px] md:w-[500px] bg-white rounded-[16px] p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] flex flex-col justify-between transform transition-transform md:-translate-y-2">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div
-                                class="w-14 h-14 rounded-full bg-brand-green text-white flex items-center justify-center font-bold text-xl shadow-sm">
-                                S
-                            </div>
+                        <div class="flex items-center gap-4 mt-auto pt-4 border-t border-gray-100">
+                            <img src="images/Testi-2.jpeg" alt="Mike Davis"
+                                class="card-avatar-ring w-14 h-14 rounded-full object-cover shadow-sm ring-2 ring-brand-green/20">
                             <div>
-                                <h3 class="font-fashion text-xl font-bold text-brand-green">Sarah Jenkins</h3>
+                                <h3 class="card-name font-fashion text-xl font-bold">Mike Davis</h3>
+                                <p class="card-role font-manjari text-sm font-medium mt-0.5">CEO at Innovate</p>
                             </div>
                         </div>
-                        <p class="font-manjari text-gray-600 leading-relaxed text-[16px] mb-2">
+                    </div>
+
+                    <!-- Card 3 — Sarah Jenkins -->
+                    <div class="testimonial-card snap-start shrink-0 w-[300px] sm:w-[350px] md:w-[500px] rounded-[16px] p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] flex flex-col justify-between">
+                        <!-- Quote Icon -->
+                        <svg class="card-quote w-8 h-8 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                        <p class="card-body font-manjari leading-relaxed text-[16px] mb-6 flex-1">
                             "The best local delivery service I have ever used. Everything arrives fresh, incredibly
                             fast, and exactly as I ordered.
                             The customer support team is extremely helpful and handled my special request immediately."
                         </p>
+                        <div class="flex items-center gap-4 mt-auto pt-4 border-t border-gray-100">
+                            <img src="images/Testi-3.jpeg" alt="Sarah Jenkins"
+                                class="card-avatar-ring w-14 h-14 rounded-full object-cover shadow-sm ring-2 ring-brand-green/20">
+                            <div>
+                                <h3 class="card-name font-fashion text-xl font-bold">Sarah Jenkins</h3>
+                                <p class="card-role font-manjari text-sm font-medium mt-0.5">Loyal Customer</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
