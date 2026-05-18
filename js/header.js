@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="absolute top-0 left-0 w-full h-[120px] md:h-[250px] bg-gradient-to-b from-white/90 via-white/50 to-transparent -z-10 pointer-events-none"></div>
 
             <!-- Brand -->
-            <div class="text-3xl md:text-4xl font-extrabold tracking-tighter text-gray-900 cursor-pointer select-none z-[110]" onclick="window.location.href='index.html'">
-                DSS
+            <div class="flex items-center z-[110]" onclick="window.location.href='index.html'">
+                <img src="images/Dss-logo.png" alt="DSS Logo" class="h-10 md:h-14 w-auto cursor-pointer select-none object-contain transition-transform hover:scale-105 duration-300 brightness-0">
             </div>
             
             <!-- Desktop Navigation Links (Centered) -->
