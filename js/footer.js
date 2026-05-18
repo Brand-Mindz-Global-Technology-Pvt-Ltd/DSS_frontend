@@ -42,28 +42,32 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <img src="assets/icons/address.svg" class="w-5 h-5" alt="Location Icon" loading="lazy" />
                             </div>
                             <p class="text-[13px] font-bold leading-tight">
-                                4074 Ebert Summit Suite 375<br>
-                                Tenkasi
+                                No.6/118h Tenkasi Main Road,<br>
+                                Kadayam
                             </p>
                         </div>
                         <div class="flex items-center space-x-3">
                             <div class="text-[#009444] shrink-0">
                                 <img src="assets/icons/phone.svg" class="w-5 h-5" alt="Phone Icon" loading="lazy" />
                             </div>
-                            <p class="text-[14px] font-bold">+91 87569 78235</p>
+                            <p class="text-[14px] font-bold">
+                                <a href="tel:8098113142" class="hover:text-[#009444] transition-colors">+91 80981 13142</a>
+                            </p>
                         </div>
                         <div class="flex items-center space-x-3">
                             <div class="text-[#009444] shrink-0">
                                 <img src="assets/icons/mail.svg" class="w-5 h-5" alt="Mail Icon" loading="lazy" />
                             </div>
-                            <p class="text-[14px] font-bold uppercase">DSS@gmail.com</p>
+                            <p class="text-[14px] font-bold">
+                                <a href="mailto:dssdeliverypartner@gmail.com" class="hover:text-[#009444] transition-colors">dssdeliverypartner@gmail.com</a>
+                            </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Bottom Bar -->
                 <div class="pt-6 border-t border-gray-400 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-[#515151]">
-                    <p class="text-[14px] font-bold">© 2026 <span class="text-[#009444]">DSS</span> All Rights Reserved.</p>
+                    <p class="text-[14px] font-bold">Copyright © 2026 <span class="text-[#009444]">Dss</span>, All rights reserved. Made with ❤ by Brand Mindz.</p>
                     <div class="flex flex-wrap justify-center gap-6 text-[13px] font-bold">
                         <a href="#" class="hover:text-[#009444] transition-colors">Terms & Conditions</a>
                         <a href="#" class="hover:text-[#009444] transition-colors">Privacy Policy</a>

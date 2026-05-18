@@ -117,8 +117,8 @@
                                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
                             </div>
-                            <a href="mailto:dss@gmail.com"
-                                class="text-lg font-bold text-gray-800 hover:text-brand-green transition-colors">dss@gmail.com</a>
+                            <a href="mailto:dssdeliverypartner@gmail.com"
+                                class="text-lg font-bold text-gray-800 hover:text-brand-green transition-colors">dssdeliverypartner@gmail.com</a>
                         </div>
 
                         <!-- Address -->
@@ -127,8 +127,8 @@
                                 <img src="assets/icons/property-location.svg" alt="" class="w-6 h-6">
                             </div>
                             <div class="text-lg font-bold text-gray-800 leading-snug">
-                                4074 Ebert Summit Suite 375<br>
-                                Tenkasi
+                                No.6/118h Tenkasi Main Road,<br>
+                                Kadayam
                             </div>
                         </div>
 
@@ -137,22 +137,21 @@
                             <div class="text-brand-green font-bold">
                                 <img src="assets/icons/mobile-chat.svg" alt="" class="w-6 h-6">
                             </div>
-                            <a href="tel:+918756978235"
-                                class="text-lg font-bold text-gray-800 hover:text-brand-green transition-colors">+91
-                                87569 78235</a>
+                            <a href="tel:8098113142"
+                                class="text-lg font-bold text-gray-800 hover:text-brand-green transition-colors">+91 80981 13142</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Right Side: Contact Form (Bordered Placeholders) -->
                 <div class="font-manjari bg-white">
-                    <form action="#" class="space-y-4">
+                    <form id="contact-form" action="#" class="space-y-4">
                         <!-- Name -->
                         <div
                             class="border border-gray-200 rounded-md p-4 focus-within:border-brand-green transition-all">
                             <label for="name" class="text-sm font-bold text-gray-400 block mb-1">Name<span
                                     class="text-red-500 ml-1">*</span></label>
-                            <input type="text" id="name" required
+                            <input type="text" id="name" name="name" required
                                 class="w-full bg-transparent border-none p-0 text-gray-900 focus:ring-0 outline-none placeholder:text-transparent"
                                 placeholder="Name">
                         </div>
@@ -162,7 +161,7 @@
                             class="border border-gray-200 rounded-md p-4 focus-within:border-brand-green transition-all">
                             <label for="phone" class="text-sm font-bold text-gray-400 block mb-1">Phone Number<span
                                     class="text-red-500 ml-1">*</span></label>
-                            <input type="tel" id="phone" required pattern="[0-9+\-\s()]+"
+                            <input type="tel" id="phone" name="phone" required pattern="[0-9+\-\s()]+"
                                 class="w-full bg-transparent border-none p-0 text-gray-900 focus:ring-0 outline-none placeholder:text-transparent"
                                 placeholder="Phone Number">
                         </div>
@@ -172,7 +171,7 @@
                             class="border border-gray-200 rounded-md p-4 focus-within:border-brand-green transition-all">
                             <label for="email" class="text-sm font-bold text-gray-400 block mb-1">Email<span
                                     class="text-red-500 ml-1">*</span></label>
-                            <input type="email" id="email" required
+                            <input type="email" id="email" name="email" required
                                 class="w-full bg-transparent border-none p-0 text-gray-900 focus:ring-0 outline-none placeholder:text-transparent"
                                 placeholder="Email">
                         </div>
@@ -181,7 +180,7 @@
                         <div
                             class="border border-gray-200 rounded-md p-4 focus-within:border-brand-green transition-all">
                             <label for="message" class="text-sm font-bold text-gray-400 block mb-1">Message</label>
-                            <textarea id="message" rows="4"
+                            <textarea id="message" name="message" rows="4"
                                 class="w-full bg-transparent border-none p-0 text-gray-900 focus:ring-0 outline-none placeholder:text-transparent resize-none"></textarea>
                         </div>
 
@@ -213,6 +212,7 @@
     <script src="js/cp-1.js"></script>
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/coming-soon.js"></script>
 </body>
 
 </html>

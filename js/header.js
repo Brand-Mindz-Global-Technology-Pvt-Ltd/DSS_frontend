@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <!-- Action Buttons -->
             <div class="flex items-center gap-3 md:gap-4">
-                <button class="hidden md:block bg-[#009444] text-white px-5 md:px-8 py-2 md:py-2.5 rounded-full text-sm md:text-lg font-bold hover:bg-green-700 transition-all shadow-lg hover:shadow-xl active:scale-95">
+                <button class="coming-soon-trigger hidden md:block bg-[#009444] text-white px-5 md:px-8 py-2 md:py-2.5 rounded-full text-sm md:text-lg font-bold hover:bg-green-700 transition-all shadow-lg hover:shadow-xl active:scale-95">
                     Get Started
                 </button>
                 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a href="contact.html" class="text-2xl font-bold ${currentPage === 'contact.html' ? 'text-[#009444]' : 'text-gray-800'} transition-colors">Contact Us</a>
                 </nav>
                 
-                <button class="bg-[#009444] text-white px-10 py-3 rounded-full text-xl font-bold shadow-xl active:scale-95">
+                <button class="coming-soon-trigger bg-[#009444] text-white px-10 py-3 rounded-full text-xl font-bold shadow-xl active:scale-95">
                     Get Started
                 </button>
 
@@ -102,10 +102,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Close menu on link click
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
+        // Close menu on link or button click
+        const mobileInteractiveElements = mobileMenu.querySelectorAll('a, button');
+        mobileInteractiveElements.forEach(element => {
+            element.addEventListener('click', () => {
                 isMenuOpen = false;
                 mobileMenu.classList.add('translate-x-full');
                 line1.style.transform = 'none';
